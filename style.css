@@ -1,0 +1,88 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+     height: 100vh;
+}
+img {
+    width: 300px;
+     animation: rotateImg 1s infinite alternate linear;
+}
+
+@keyframes rotateImg {
+    from{
+        transform: rotate(-10deg);
+      
+    }
+    to{
+        transform: rotate(13deg);
+      
+    }
+}
+.all{
+border: 3px solid rgb(211, 130, 143);
+padding: 10px;
+background-color: #bf9ea46b;
+
+}
+.all h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.timer{
+    box-shadow: 0px 0px 0px 1px pink;
+    border: 2px solid pink;
+    animation: name infinite 0.5s alternate linear ;
+        text-align: center;
+        width: 138px;
+        font-size: 20px;
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+    
+}
+
+@keyframes name {
+
+    0%{
+        width: 160px;
+        transform: translate(2px);
+    }
+    100%{
+        width: 155px;
+        transform: translate(0px);
+    }
+    }
+#full{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+   
+    
+    border-radius: 5px;
+}
+#full .timelist{
+    padding: 6px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+button{
+    cursor: pointer;
+    background-color: pink;
+    border: none;
+    padding: 6px;
+    border-radius: 7px;
+}
+button:hover{
+    background-color: brown;
+}
